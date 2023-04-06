@@ -1,0 +1,73 @@
+ header h1:first-child {
+     text-align: center;
+     background-color: #b6b3b3;
+     text-transform: uppercase;
+ }
+
+ header h1:first-child:hover {
+     text-align: center;
+     background-color: greenyellow;
+     text-transform: uppercase;
+     color: orange;
+ }
+
+ body {
+     border: 5px solid black;
+     line-height: 1;
+     background-image: linear-gradient(to right, #800080, #0000ff, #008000);
+ }
+
+ /* button {
+     background-color: black;
+     color: white;
+     font-size: x-large;
+ } */
+
+ .more-info:link {
+     background-color: white;
+     color: black;
+     text-decoration-line: none;
+ }
+
+ .more-info:hover,
+ .more-info:active {
+     background-color: greenyellow;
+     color: orange;
+     font-weight: bold;
+     text-decoration-line: underline;
+ }
+
+ /* button:hover {
+     background-color: white;
+     color: black;
+     cursor: pointer;
+     border: none;
+ } */
+
+ .price {
+     font-size: 22px;
+ }
+
+ .shipping {
+     color: #808080;
+     font-weight: bold;
+     font-size: larger;
+     font-size: 22px;
+ }
+
+ .my-list {
+     list-style-type: circle;
+ }
+
+ button.hover-button {
+     background-color: black;
+     color: white;
+     font-size: x-large;
+ }
+
+ button.after-hover:hover {
+     background-color: white;
+     color: black;
+     cursor: pointer;
+     border: none;
+ }

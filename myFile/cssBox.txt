@@ -1,0 +1,3 @@
+CSS Box Model defines how elements are displayed on a webpage and how they are sized
+padding = invisibile white space
+
