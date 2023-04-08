@@ -1,3 +1,8 @@
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
 h1,
 h2,
 h3,
@@ -13,10 +18,13 @@ h3 {
     color: #5241ee;
 }
 
-h1 {
+h1::first-letter {
     font-size: 35px;
     text-transform: none;
-    font-style: initial;
+}
+
+.book-emoji::first-letter {
+    font-style: normal;
 }
 
 h2 {
@@ -49,6 +57,7 @@ footer p {
 
 header h1 {
     font-style: italic;
+    margin-bottom: 20px;
 }
 
 #author {
@@ -57,6 +66,12 @@ header h1 {
     font-style: italic;
     color: blue;
     background-color: whitesmoke;
+}
+
+#author:hover {
+    cursor: pointer;
+    color: orange;
+    background-color: greenyellow;
 }
 
 #copyright {
@@ -76,6 +91,9 @@ header h1 {
 .top-header {
     background-color: #15c2f7;
     border: 5px solid #585151;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    height: 200px;
 }
 
 .related-posts {
@@ -86,12 +104,14 @@ header h1 {
 .second-header {
     background-color: #bdbaba;
     border: 5px solid;
-
+    margin-bottom: 20px;
+    position: relative;
 }
 
 .div-class {
     background-color: #a8a4d1;
     border: 5px solid;
+    margin-bottom: 20px;
 }
 
 /* .first-list {
@@ -99,18 +119,24 @@ header h1 {
     border: 5px solid #242323;
 } */
 
-li:first-child {
+/* li:first-child {
     font-weight: bold;
 }
 
 li:nth-child(2) {
     color: brown;
     font-weight: bold;
-}
+} */
 
-a:link {
+nav a:link {
     font-weight: bold;
     color: #969494;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+nav a:link:last-child {
+    padding: 0;
 }
 
 a:visited {
@@ -126,6 +152,74 @@ a:active {
     color: #2d05bd;
 }
 
-/* body {
-    color: red;
-} */
+.first-list {
+    margin-bottom: 20px;
+}
+
+body {
+    /* margin: 50px 10px; */
+    border: 5px solid blue;
+    background-image: linear-gradient(to right, #c6ccce, #4d2bc9, #5241ee);
+}
+
+aside {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.html-image {
+    width: 50%;
+    height: auto;
+}
+
+.author-image {
+    width: 100px;
+    height: auto;
+}
+
+.container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.like-button {
+    background-color: orange;
+    color: purple;
+    padding: 20px;
+    border: 3px solid black;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* top:50px;
+    left:50px; */
+}
+
+.scroller {
+    background-color: greenyellow;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.scroller:hover {
+    background-color: orange;
+    color: purple;
+    font-weight: bold;
+}
+
+h3+p::first-line {
+    color: #461146;
+    font-weight: bold;
+}
+
+h2::after {
+    content: "TOP";
+    background-color: #ffff00;
+    position: absolute;
+    top: 5px;
+    right: 100px;
+    padding: 7px;
+}

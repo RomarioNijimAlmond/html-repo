@@ -1,7 +1,13 @@
+ * {
+     padding: 0;
+     margin: 0;
+ }
+
  header h1:first-child {
      text-align: center;
      background-color: #b6b3b3;
      text-transform: uppercase;
+     padding: 20px;
  }
 
  header h1:first-child:hover {
@@ -12,9 +18,9 @@
  }
 
  body {
-     border: 5px solid black;
+     /* border: 5px solid black; */
      line-height: 1;
-     background-image: linear-gradient(to right, #800080, #0000ff, #008000);
+     background-image: linear-gradient(to right, #b6adb6, #0d47b3, #c189db);
  }
 
  /* button {
@@ -24,9 +30,15 @@
  } */
 
  .more-info:link {
-     background-color: white;
+     background-color: #a49ba7;
      color: black;
+     font-weight: bold;
      text-decoration-line: none;
+     margin: 0 auto;
+     text-align: center;
+     display: block;
+     font-size: 30px;
+     padding: 15px;
  }
 
  .more-info:hover,
@@ -35,6 +47,8 @@
      color: orange;
      font-weight: bold;
      text-decoration-line: underline;
+
+
  }
 
  /* button:hover {
@@ -49,15 +63,15 @@
  }
 
  .shipping {
-     color: #808080;
+     color: #1a1515;
      font-weight: bold;
      font-size: larger;
      font-size: 22px;
  }
 
- .my-list {
+ /* .my-list {
      list-style-type: circle;
- }
+ } */
 
  button.hover-button {
      background-color: black;
@@ -70,4 +84,68 @@
      color: black;
      cursor: pointer;
      border: none;
+ }
+
+ .container {
+     width: 1000px;
+     border: 5px solid black;
+     margin: 0 auto;
+     background-image: image-set() ;
+ }
+
+ .article-class p {
+     padding-bottom: 10px;
+ }
+
+ .my-list li {
+     padding-bottom: 10px;
+ }
+
+ .header-button {
+     background-color: black;
+     color: white;
+     display: block;
+     margin: 0 auto;
+     width: 100px;
+     height: 100px;
+     font-size: 30px;
+     font-weight: bold;
+     cursor: pointer;
+ }
+
+ img.shoes {
+     padding-bottom: 20px;
+ }
+
+
+ /* .last-div-section {
+    border-top: 5px solid black;
+ } */
+
+ #w3schools {
+     border-top: 5px solid black;
+     width: 100%;
+     display: block;
+     margin: 0 auto;
+     height: 100%;
+     padding-bottom: 10px;
+     text-align: center;
+     font-size: 50px;
+ }
+
+ .product-details {
+     margin-bottom: 10px;
+     text-decoration: underline;
+     margin-top: 10px;
+ }
+
+ .my-list li {
+     padding-bottom: 10px;
+     margin-left: 20px;
+ }
+
+ .price-word {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
  }
