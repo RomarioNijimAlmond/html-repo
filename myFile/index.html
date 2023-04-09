@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html>
 
 <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,6 @@
     <title>
         Header Of The Web
     </title>
-
 </head>
 
 <body>
@@ -23,14 +22,7 @@
                 <a href="#">FlexBox</a>
                 <a href="#">CSS Grid</a>
                 <button class="scroller" onclick="scrollDown()">scroll down</button>
-                <script>
-                    function scrollDown() {
-                        window.scrollBy({
-                            top: window.innerHeight,
-                            behavior: "smooth",
-                        });
-                    }
-                </script>
+
             </nav>
         </header>
 
@@ -83,16 +75,6 @@
                     <li>You can learn more at the MDN Web Docs.</li>
                 </ol>
             </div>
-
-            <script>
-                function scrollUp() {
-                    window.scrollBy({
-                        top: -window.innerHeight,
-                        behavior: 'smooth'
-                    })
-                }
-            </script>
-
         </article>
         <aside class="related-posts">
             <p><strong>Related Posts:</strong></p>
@@ -119,9 +101,13 @@
             </ul>
         </aside>
         <footer>
-            <p id="copyright">Copyright &copy 2023 by the html css</p>
+            <p id="copyright">Copyright &copy; 2023 by the html css</p>
         </footer>
     </div>
+
+    <script src="app.js">
+    </script>
+
 </body>
 
 </html>

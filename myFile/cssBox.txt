@@ -5,3 +5,6 @@ margin  =  creates space around/outside the element and not inside it - we use m
 final element width calculation = left border + left padding + width + right padding + right border
 final element height calculation = top border + top padding + height + bottom padding + bottom border
 this is the default behavior but we can change this by using CSS properties
+inline-block = does not take the tnite space - takes as much space as needed - it is best to put it inside a container such as a div
+and make an inline block so we clould palce elements besides/near eachother without taking thw whole space
+display block - takes up the whole space line which forces a line before and after it depends on the html structure in the code

@@ -8,6 +8,7 @@
      background-color: #b6b3b3;
      text-transform: uppercase;
      padding: 20px;
+     position: relative;
  }
 
  header h1:first-child:hover {
@@ -21,6 +22,7 @@
      /* border: 5px solid black; */
      line-height: 1;
      background-image: linear-gradient(to right, #b6adb6, #0d47b3, #c189db);
+     position: relative;
  }
 
  /* button {
@@ -35,7 +37,6 @@
      font-weight: bold;
      text-decoration-line: none;
      margin: 0 auto;
-     text-align: center;
      display: block;
      font-size: 30px;
      padding: 15px;
@@ -89,8 +90,13 @@
  .container {
      width: 1000px;
      border: 5px solid black;
-     margin: 0 auto;
-     background-image: image-set() ;
+     margin: 30px auto;
+     background-image: image-set();
+     position: relative;
+ }
+
+ .article-class {
+     position: relative;
  }
 
  .article-class p {
@@ -104,17 +110,26 @@
  .header-button {
      background-color: black;
      color: white;
-     display: block;
+     display: inline-block;
      margin: 0 auto;
      width: 100px;
      height: 100px;
      font-size: 30px;
      font-weight: bold;
      cursor: pointer;
+     position: absolute;
+     right: 400px;
+     top: -150px;
+     text-align: center;
  }
 
  img.shoes {
      padding-bottom: 20px;
+ }
+
+ .shoes-man {
+     display: inline-block;
+
  }
 
 
@@ -145,7 +160,106 @@
  }
 
  .price-word {
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: underline;
+     font-size: 22px;
+     font-weight: bold;
+     text-decoration: underline;
+ }
+
+ h1:first-child::after {
+     content: "Sale";
+     background-color: #df4040;
+     color: white;
+     position: absolute;
+     top: -20px;
+     left: -20px;
+     padding: 10px;
+     font-size: medium;
+     letter-spacing: 3px;
+     width: 60px;
+
+ }
+
+ .color {
+     width: 30px;
+     height: 30px;
+     display: inline-block;
+     margin-top: 10px;
+     margin-right: 10px;
+     display: inline-block;
+
+ }
+
+ .box1 {
+     background-color: #0d47b3;
+ }
+
+ .box2 {
+     background-color: #721297;
+ }
+
+ .box3 {
+     background-color: #13b30d;
+ }
+
+ .box4 {
+     background-color: #9ab30d;
+ }
+
+
+ .box5 {
+     background-color: #b3870d;
+ }
+
+ .box5 {
+     margin-right: 0;
+ }
+
+ #xButton {
+     background-color: white;
+     color: black;
+     width: 20px;
+     position: absolute;
+     top: 0;
+     right: 0;
+ }
+
+ /* 
+ #search {
+    display: inline;
+ } */
+
+ #searchBox {
+     margin-bottom: 10px;
+
+ }
+
+ .search-label {
+     font-weight: bold;
+ }
+
+ .submit {
+     padding: 0.5px;
+ }
+
+ .table1 {
+     width: 700px;
+     height: 50px;
+     border: 5px solid black;
+     margin-bottom: 10px;
+ }
+
+ table {
+     table-layout: fixed;
+     width: 100%;
+     background-image: linear-gradient(to right, #0d47b3, #13b30d);
+ }
+
+ td,
+ th {
+     width: 70px;
+     height: 70px;
+     padding: 10px;
+     text-align: center;
+     border: 1px solid black;
+
  }
