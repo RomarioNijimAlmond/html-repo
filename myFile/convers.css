@@ -252,6 +252,7 @@
      table-layout: fixed;
      width: 100%;
      background-image: linear-gradient(to right, #0d47b3, #13b30d);
+     /* border-collapse: collapse; */
  }
 
  td,
@@ -261,5 +262,4 @@
      padding: 10px;
      text-align: center;
      border: 1px solid black;
-
  }
