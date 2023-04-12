@@ -20,6 +20,11 @@ jobs:
       - name: checkout branch
         uses: actions/checkout@v3
 
+      - name: install dependencies
+        run: |
+          cd uiAutomation
+          cpm ci
+
       - name: run tests
         run: |
           cd uiAutomation
