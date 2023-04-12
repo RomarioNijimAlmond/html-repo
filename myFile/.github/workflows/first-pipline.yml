@@ -41,21 +41,21 @@ jobs:
   #     - name: rebuild image then push to docker hub
   #       uses: docker/build-push-actions@v3
 
-  nightly:
-    runs-on: ubuntu-20.04
-    if: github.refs == 'refs/heads/dev'
-    strategy:
-      matrix:
-        modules: ["@Sauce"]
-    steps:
-      - name: checkout closed
-        uses: actions/checkout@v3
-      - name: nightly run
-        run: |
-          cd uiAutomation
-          npx playwright test --grep ${{matrix.modules}}
-      - name: upload actions/upload-artifact
-        uses: actions/upload-artifact
-        with:
-          -name: playwight-report
-          path: uiAutomation/playwright-report
+  # nightly:
+  #   runs-on: ubuntu-20.04
+  #   if: github.refs == 'refs/heads/dev'
+  #   strategy:
+  #     matrix:
+  #       modules: ["@Sauce"]
+  #   steps:
+  #     - name: checkout closed
+  #       uses: actions/checkout@v3
+  #     - name: nightly run
+  #       run: |
+  #         cd uiAutomation
+  #         npx playwright test --grep ${{matrix.modules}}
+  #     - name: upload actions/upload-artifact
+  #       uses: actions/upload-artifact
+  #       with:
+  #         -name: playwight-report
+  #         path: uiAutomation/playwright-report
