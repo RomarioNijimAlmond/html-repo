@@ -23,7 +23,7 @@ jobs:
       - name: install dependencies
         run: |
           cd uiAutomation
-          cpm ci
+          npm ci
 
       - name: run tests
         run: |
