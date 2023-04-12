@@ -1,0 +1,80 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 240000,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/romario/Desktop/html-css/myFile/uiAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "",
+        "name": "",
+        "testDir": "/home/romario/Desktop/html-css/myFile/uiAutomation",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 1000000
+      }
+    ],
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "reports/test-results.xml"
+        }
+      ],
+      [
+        "/home/romario/node_modules/allure-playwright/dist/index.js",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/test-results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "configFile": "/home/romario/Desktop/html-css/myFile/uiAutomation/playwright.config.ts",
+    "rootDir": "/home/romario/Desktop/html-css/myFile/uiAutomation",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.32.2",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [],
+  "errors": [
+    {
+      "message": "Requiring @playwright/test second time, \nFirst:\nError: \n    at Object.<anonymous> (/home/romario/node_modules/@playwright/test/lib/index.js:75:33)\n    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n    at Object.i.<computed>.ot._extensions.<computed> [as .js] (/home/romario/Desktop/html-css/myFile/uiAutomation/node_modules/@playwright/test/lib/utilsBundleImpl.js:16:1010)\n    at Module.load (node:internal/modules/cjs/loader:981:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n    at Module.require (node:internal/modules/cjs/loader:1005:19)\n    at require (node:internal/modules/cjs/helpers:102:18)\n    at Object.<anonymous> (/home/romario/node_modules/@playwright/test/index.js:17:13)\n    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n    at Object.i.<computed>.ot._extensions.<computed> [as .js] (/home/romario/Desktop/html-css/myFile/uiAutomation/node_modules/@playwright/test/lib/utilsBundleImpl.js:16:1010)\n    at Module.load (node:internal/modules/cjs/loader:981:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n    at Module.require (node:internal/modules/cjs/loader:1005:19)\n\nSecond: ",
+      "stack": "Error: Requiring @playwright/test second time, \nFirst:\nError: \n    at Object.<anonymous> (/home/romario/node_modules/@playwright/test/lib/index.js:75:33)\n    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n    at Object.i.<computed>.ot._extensions.<computed> [as .js] (/home/romario/Desktop/html-css/myFile/uiAutomation/node_modules/@playwright/test/lib/utilsBundleImpl.js:16:1010)\n    at Module.load (node:internal/modules/cjs/loader:981:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n    at Module.require (node:internal/modules/cjs/loader:1005:19)\n    at require (node:internal/modules/cjs/helpers:102:18)\n    at Object.<anonymous> (/home/romario/node_modules/@playwright/test/index.js:17:13)\n    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n    at Object.i.<computed>.ot._extensions.<computed> [as .js] (/home/romario/Desktop/html-css/myFile/uiAutomation/node_modules/@playwright/test/lib/utilsBundleImpl.js:16:1010)\n    at Module.load (node:internal/modules/cjs/loader:981:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n    at Module.require (node:internal/modules/cjs/loader:1005:19)\n\nSecond: \n    at Object.<anonymous> (/home/romario/node_modules/@playwright/test/lib/index.js:75:33)\n    at Object.<anonymous> (/home/romario/node_modules/@playwright/test/index.js:17:13)\n    at Object.<anonymous> (/home/romario/Desktop/html-css/myFile/uiAutomation/tests/LoginToSauce.spec.ts:3:13)"
+    },
+    {
+      "message": "No tests found",
+      "stack": "Error: No tests found\n"
+    }
+  ]
+}

@@ -60,13 +60,13 @@ header h1 {
     margin-bottom: 20px;
 }
 
-#author {
+/* #author {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     color: blue;
     background-color: whitesmoke;
-}
+} */
 
 #author:hover {
     cursor: pointer;
@@ -168,14 +168,15 @@ aside {
 }
 
 .html-image {
-    width: 50%;
-    height: auto;
+    width: 70%;
+    height: 100%;
+    margin-top: 50px;
+    display: inline-block;
+    margin-left: -100px;
+
+
 }
 
-.author-image {
-    width: 100px;
-    height: auto;
-}
 
 .container {
     width: 700px;
@@ -222,7 +223,43 @@ h2::after {
     position: absolute;
     top: 0;
     right: 73px;
-    padding: 16px; 
+    padding: 16px;
     color: #5732dd;
     font-weight: bold;
+}
+
+/* floats */
+
+.author-class {
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left;
+    text-align: center;
+    padding-right: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: blue;
+    background-color: whitesmoke;
+    bottom: 0;
+
+}
+
+.author-image {
+    width: 100px;
+    height: auto;
+    float: left;
+    margin-bottom: 50px;
+}
+
+h1 {
+    float: left;
+}
+
+/* nav {
+    float: right;
+} */
+
+.clear {
+    clear: both;
 }

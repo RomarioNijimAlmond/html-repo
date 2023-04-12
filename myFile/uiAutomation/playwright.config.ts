@@ -5,6 +5,9 @@ const config: PlaywrightTestConfig = {
     globalTimeout: 240000,
 
 
+    reporter: [["html", { open: "never" }]],
+
+
     use: {
         trace: 'on',
         screenshot: 'on',

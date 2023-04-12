@@ -18,7 +18,7 @@ test.describe('login', async () => {
         await context.clearCookies();
     })
 
-    test('login to sauce', async () => {
+    test('login to sauce @Sauce', async () => {
         await test.step('login', async () => {
             await basePage.loadApplication(ApplicationUrl.SAUCE_DEMO);
             await swag.login('standard_user', 'secret_sauce');
