@@ -11,105 +11,107 @@
 
 <body>
     <div class="container">
-        <div class="top-header">
-            <h1>The Code Magazine Demo: HTML</h1>
-            <h1 class="book-emoji">📘 The Code Magazine</h1>
-            <nav>
-                <a href="blog.html">a link to the blog page</a>
-                <a href="#">challenges</a>
-                <a href="#">HTML</a>
-                <a href="#">CSS</a>
-                <a href="#">FlexBox</a>
-                <a href="#">CSS Grid</a>
-                <button class="scroller" onclick="scrollDown()">scroll down</button>
+        <div class="container">
+            <header class="main-header">
+                <h1>📘 The Code Magazine</h1>
 
-            </nav>
+                <nav>
+                    <!-- <strong>This is the navigation</strong> -->
+                    <a href="blog.html">Blog</a>
+                    <a href="#">Challenges</a>
+                    <a href="#">Flexbox</a>
+                    <a href="#">CSS Grid</a>
+                    <button class="scroller" onclick="scrollDown()">scroll down</button>
+                </nav>
 
-        </div>
-
-        <div class="clear"></div>
-        </header>
-
-        <article>
-            <header class="second-header">
-                <h2>The Basic Language of the Web: HTML</h2>
-                <img class="author-image" src="img/laura-jones.jpg" alt="The Author of the article" width="100"
-                    height="100" />
-                <p id="author" class="author-class">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
-                <img class="html-image" src="img/post-img.jpg" alt="Html Structure Code Snippet" width="500"
-                    height="200" />
-                <button class="like-button" onclick="scrollUp()">Like</button>
                 <div class="clear"></div>
             </header>
 
-            <div class="div-class">
-                <p>All modern websites and web applications are built using three fundamental technologies: HTML, CSS
-                    and
-                    JavaScript. These are the languages of the web.</p>
-                <h3>what is HTML? or maybe Playwright?</h3>
-                <p>in here you can find more info <a href="https://playwright.dev/" target="_blank">playwright</a> OR <a
-                        href="https://www.w3schools.com/html/html_links.asp" target="_blank"> here</a> </p>
-                <p>In this post, let's focus on HTML. We will learn what HTML is all about, and why you too should learn
-                    it.
-                </p>
-                <p>HTML stands for <strong>H</strong>yper<strong>T</strong>ext Markup Language. It's a markup language
-                    that
-                    web
-                    developers use to structure and
-                    describe the content of a webpage (not a programming language). </p>
-                <p>HTML consists of elements that describe different types of content: paragraphs, links, headings,
-                    images,
-                    video,
-                    etc. Web browsers understand HTML and render HTML code as websites.
-                </p>
-                <h3>why should you learn HTML?</h3>
-                <ul class="first-list">
-                    <li>To be able to use the <em>fundamental</em> web dev language</li>
-                    <li>To hand-craft beautiful websites instead of relying on tools like Worpress or Wix</li>
-                    <li>To build web applications</li>
-                    <li>To impress friends</li>
-                    <li>To have fun 😃 </li>
-                </ul>
-                <p><strong> the order list:</strong></p>
-                <ol>
-                    <li>The opening tag</li>
-                    <li>The closing tag</li>
-                    <li>The actual element</li>
-                    <li>You can learn more at the MDN Web Docs.</li>
-                </ol>
-            </div>
-        </article>
-        <aside class="related-posts">
-            <p><strong>Related Posts:</strong></p>
-            <ul class="related second-list">
-                <li> <img src="img/challenges.jpg" alt="random shoes of some person" height="100" width="100">
-                    <a href="https://www.google.com/search?q=how+to+learn+web+development&oq=how+to+learn+web&aqs=chrome.0.0i512j69i57j0i512l8.2481j0j7&sourceid=chrome&ie=UTF-8"
-                        target="_blank">how
-                        to learn web development</a>
-                    <p class="related-author">BY Jonas</p>
-                </li>
-                <li>
-                    <img src="img/related-1.jpg" alt="person typing on his laptop" height="100" width="100">
-                    <a href="https://www.google.com/search?q=how+to+learn+css&ei=0UwsZISLFPO3xc8P--CauAM&ved=0ahUKEwjEt5S5z5D-AhXzW_EDHXuwBjcQ4dUDCA8&uact=5&oq=how+to+learn+css&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQigUQkQIyCAgAEIoFEJECMgUIABCABDIICAAQigUQkQIyBQgAEIAEMgUIABCABDIICAAQigUQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6CggAEEcQ1gQQsAM6CggAEIoFELADEEM6DQgAEOQCENYEELADGAE6FQguEIoFEMcBENEDEMgDELADEEMYAjoYCC4QigUQxwEQ0QMQ1AIQyAMQsAMQQxgCOgcIABCKBRBDSgQIQRgAUIUIWIAQYN0QaAJwAXgAgAGKAYgBwAaSAQMwLjeYAQCgAQHIARLAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz-serp"
-                        target="_blank">how
-                        to learn css</a>
-                    <p class="related-author">BY Some</p>
-                </li>
-                <li>
-                    <img src="img/related-3.jpg" alt="screen of code image" height="100" width="100">
-                    <a href="https://www.google.com/search?q=how+to+learn+js&ei=ZU0sZJXwG-qNi-gPjJeYsAg&ved=0ahUKEwjVtuX_z5D-AhXqxgIHHYwLBoYQ4dUDCA8&uact=5&oq=how+to+learn+js&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCAAQigUQQzIHCAAQigUQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgoIABBHENYEELADOhAILhCKBRDHARDRAxCwAxBDOgoIABCKBRCwAxBDSgQIQRgAUM8FWPcFYO0GaAJwAXgAgAF-iAF-kgEDMC4xmAEAoAEByAEKwAEB&sclient=gws-wiz-serp"
-                        target="_blank">how to learn JS</a>
-                    <p class="related-author"> BY Random</p>
-                </li>
-            </ul>
-        </aside>
-        <footer>
-            <p id="copyright">Copyright &copy; 2023 by the html css</p>
-        </footer>
-    </div>
 
-    <script src="app.js">
-    </script>
+            <article>
+                <header class="second-header">
+                    <h2>The Basic Language of the Web: HTML</h2>
+                    <img class="author-image" src="img/laura-jones.jpg" alt="The Author of the article" width="100"
+                        height="100" />
+                    <p id="author" class="author-class">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+                    </p>
+                    <img class="html-image" src="img/post-img.jpg" alt="Html Structure Code Snippet" width="500"
+                        height="200" />
+                    <button class="like-button" onclick="scrollUp()">Like</button>
+                    <div class="clear"></div>
+                </header>
+
+                <div class="div-class">
+                    <p>All modern websites and web applications are built using three fundamental technologies: HTML,
+                        CSS
+                        and
+                        JavaScript. These are the languages of the web.</p>
+                    <h3>what is HTML? or maybe Playwright?</h3>
+                    <p>in here you can find more info <a href="https://playwright.dev/" target="_blank">playwright</a>
+                        OR <a href="https://www.w3schools.com/html/html_links.asp" target="_blank"> here</a> </p>
+                    <p>In this post, let's focus on HTML. We will learn what HTML is all about, and why you too should
+                        learn
+                        it.
+                    </p>
+                    <p>HTML stands for <strong>H</strong>yper<strong>T</strong>ext Markup Language. It's a markup
+                        language
+                        that
+                        web
+                        developers use to structure and
+                        describe the content of a webpage (not a programming language). </p>
+                    <p>HTML consists of elements that describe different types of content: paragraphs, links, headings,
+                        images,
+                        video,
+                        etc. Web browsers understand HTML and render HTML code as websites.
+                    </p>
+                    <h3>why should you learn HTML?</h3>
+                    <ul class="first-list">
+                        <li>To be able to use the <em>fundamental</em> web dev language</li>
+                        <li>To hand-craft beautiful websites instead of relying on tools like Worpress or Wix</li>
+                        <li>To build web applications</li>
+                        <li>To impress friends</li>
+                        <li>To have fun 😃 </li>
+                    </ul>
+                    <p><strong> the order list:</strong></p>
+                    <ol>
+                        <li>The opening tag</li>
+                        <li>The closing tag</li>
+                        <li>The actual element</li>
+                        <li>You can learn more at the MDN Web Docs.</li>
+                    </ol>
+                </div>
+            </article>
+            <aside class="related-posts">
+                <p><strong>Related Posts:</strong></p>
+                <ul class="related second-list">
+                    <li> <img src="img/challenges.jpg" alt="random shoes of some person" height="100" width="100">
+                        <a href="https://www.google.com/search?q=how+to+learn+web+development&oq=how+to+learn+web&aqs=chrome.0.0i512j69i57j0i512l8.2481j0j7&sourceid=chrome&ie=UTF-8"
+                            target="_blank">how
+                            to learn web development</a>
+                        <p class="related-author">BY Jonas</p>
+                    </li>
+                    <li>
+                        <img src="img/related-1.jpg" alt="person typing on his laptop" height="100" width="100">
+                        <a href="https://www.google.com/search?q=how+to+learn+css&ei=0UwsZISLFPO3xc8P--CauAM&ved=0ahUKEwjEt5S5z5D-AhXzW_EDHXuwBjcQ4dUDCA8&uact=5&oq=how+to+learn+css&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQigUQkQIyCAgAEIoFEJECMgUIABCABDIICAAQigUQkQIyBQgAEIAEMgUIABCABDIICAAQigUQkQIyBQgAEIAEMgUIABCABDIFCAAQgAQ6CggAEEcQ1gQQsAM6CggAEIoFELADEEM6DQgAEOQCENYEELADGAE6FQguEIoFEMcBENEDEMgDELADEEMYAjoYCC4QigUQxwEQ0QMQ1AIQyAMQsAMQQxgCOgcIABCKBRBDSgQIQRgAUIUIWIAQYN0QaAJwAXgAgAGKAYgBwAaSAQMwLjeYAQCgAQHIARLAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz-serp"
+                            target="_blank">how
+                            to learn css</a>
+                        <p class="related-author">BY Some</p>
+                    </li>
+                    <li>
+                        <img src="img/related-3.jpg" alt="screen of code image" height="100" width="100">
+                        <a href="https://www.google.com/search?q=how+to+learn+js&ei=ZU0sZJXwG-qNi-gPjJeYsAg&ved=0ahUKEwjVtuX_z5D-AhXqxgIHHYwLBoYQ4dUDCA8&uact=5&oq=how+to+learn+js&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCAAQigUQQzIHCAAQigUQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgoIABBHENYEELADOhAILhCKBRDHARDRAxCwAxBDOgoIABCKBRCwAxBDSgQIQRgAUM8FWPcFYO0GaAJwAXgAgAF-iAF-kgEDMC4xmAEAoAEByAEKwAEB&sclient=gws-wiz-serp"
+                            target="_blank">how to learn JS</a>
+                        <p class="related-author"> BY Random</p>
+                    </li>
+                </ul>
+            </aside>
+            <footer>
+                <p id="copyright">Copyright &copy; 2023 by the html css</p>
+            </footer>
+        </div>
+
+        <script src="app.js">
+        </script>
 
 </body>
 

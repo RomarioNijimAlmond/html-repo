@@ -8,3 +8,41 @@ this is the default behavior but we can change this by using CSS properties
 inline-block = does not take the tnite space - takes as much space as needed - it is best to put it inside a container such as a div
 and make an inline block so we clould palce elements besides/near eachother without taking thw whole space
 display block - takes up the whole space line which forces a line before and after it depends on the html structure in the code
+in order to declare a size on an element inside a css box model without changing it by the padding or border => we can use the
+box-sizing property on the element with the value of border-box => element {box-sizing:border-box} =? so the final calculation is
+the width and the height that we specify only.
+
+
+//------------layouts----------------------------
+
+layouts are the text image and other content is placed on a webpage - they are arranged in a certain way
+the layout gives a visual structure to place the content
+
+two types of layout
+page layout = laying out the elements inside a webpage/website
+component layout = bigger page layouts are made of components - are made of smaller pieces of content so they also need to be aranged in a way
+we need to give this smaller components a layout
+
+#1 using float (old way) float csss property (flex box and css grid is the replacement for it)
+
+
+//------------flexbox-----------------------------
+set of related css properties that we can sue to build one dimention layouts
+we start by using the property "display:flex" on a container element which will be the flex container => then all of the child elements of that container will become the flex items
+
+flex container properties => important ones
+gap: 0 => space between items
+justify-content: center => to align item along main axis horizonally
+align-items:stretch => to align items along cross axis (vertically) to match the highest element 
+flex-direction: row => define which is the main axis
+flex-wrap: nowrap => to allow items to wrap into a new line if they are too large
+align-content: stretch only applies when there are multiple lines
+
+flex items properties => important one
+
+align-self:auto => to overright align-items for individual flex items
+flex-grow:0 => allow an element to grow
+flex-shrink: 1 allow an element to shrink
+flex-basis: auto => to define an item's width instead of the width property
+flex: 0 1 auto => recommended shorthand for flex-grow , shrink and basis
+

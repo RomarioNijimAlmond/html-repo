@@ -1,6 +1,7 @@
 FROM node:16
 
-WORKDIR /uiAutomation
+COPY . /html-css
+WORKDIR /html-css/uiAutomation
 
 COPY package*.json ./
 RUN npm ci

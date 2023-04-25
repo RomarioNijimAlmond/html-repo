@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testInChromeBrowser": "npx playwright test --headed --project='Chrome Browser'",
+    "testInEdgeBrowser": "npx playwright test --headed --project='Edge Browser'",
+    "testInFirefoxBrowser": "npx playwright test --headed --project='FireFox Browser'"
   },
   "keywords": [],
   "author": "",

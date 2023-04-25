@@ -55,9 +55,10 @@ footer p {
     font-size: 20px;
 }
 
-header h1 {
+.main-header h1 {
     font-style: italic;
     margin-bottom: 20px;
+    position: relative;
 }
 
 /* #author {
@@ -88,12 +89,22 @@ header h1 {
     list-style: none;
 }
 
+.main-header {
+    background-color: #15c2f7;
+    border: 5px solid #585151;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    height: 200px;
+    
+}
+
 .top-header {
     background-color: #15c2f7;
     border: 5px solid #585151;
     padding: 20px 40px;
     margin-bottom: 20px;
     height: 200px;
+  
 }
 
 .related-posts {
@@ -133,6 +144,10 @@ nav a:link {
     color: #969494;
     display: inline-block;
     padding-right: 10px;
+    text-decoration: none;
+    font-size: larger;
+    /* background-color: yellowgreen;
+    border: 3px solid black; */
 }
 
 nav a:link:last-child {
@@ -140,7 +155,8 @@ nav a:link:last-child {
 }
 
 a:visited {
-    color: #242323;
+    background-color: yellowgreen;
+    color: #161303;
 }
 
 a:hover {
@@ -165,6 +181,7 @@ body {
 aside {
     padding-top: 50px;
     padding-bottom: 50px;
+  
 }
 
 .html-image {
@@ -172,17 +189,18 @@ aside {
     height: 100%;
     margin-top: 50px;
     display: inline-block;
-    margin-left: -100px;
-
-
+   
 }
 
 
 .container {
-    width: 700px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
 }
 
 .like-button {
@@ -233,7 +251,6 @@ h2::after {
 .author-class {
     padding-left: 10px;
     padding-top: 10px;
-    float: left;
     text-align: center;
     padding-right: 10px;
     font-size: 20px;
@@ -243,18 +260,16 @@ h2::after {
     background-color: whitesmoke;
     bottom: 0;
 
+
 }
 
 .author-image {
     width: 100px;
     height: auto;
-    float: left;
     margin-bottom: 50px;
 }
 
-h1 {
-    float: left;
-}
+
 
 /* nav {
     float: right;

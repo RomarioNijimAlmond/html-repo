@@ -24,38 +24,32 @@ const config: PlaywrightTestConfig = {
         }
     },
 
-    // projects: [
-    //     {
-    //         name: 'Chrome Browser',
-    //         use: {
-    //             browserName: 'chromium',
-    //             channel: 'chrome',
-    //             viewport: { width: 1400, height: 900 },
-    //         },
-    //     },
-    //     {
-    //         name: 'Edge Browser',
-    //         use: {
-    //             browserName: 'chromium',
-    //             channel: 'msedge',
-    //             viewport: { width: 1400, height: 900 },
-    //         }
-    //     },
-    //     {
-    //         name: 'Firefox Browser',
-    //         use: {
-    //             browserName: 'firefox',
-    //             channel: 'firefox',
-    //             viewport: { width: 1400, height: 900 },
-    //         }
-    //     },
-    // ],
-
-    // testMatch: ["PlaywrightProject/API.spec.ts"],
-    // retries: 0,
-    // reporter: [["dot"], ["json", {outputFile: "test-result.json"}]],
-    // // ['experimental-allure-playwright']],
-
+    projects: [
+        {
+            name: 'Chrome Browser',
+            use: {
+                browserName: 'chromium',
+                channel: 'chrome',
+                viewport: { width: 1400, height: 900 },
+            },
+        },
+        {
+            name: 'Edge Browser',
+            use: {
+                browserName: 'chromium',
+                channel: 'msedge',
+                viewport: { width: 1400, height: 900 },
+            }
+        },
+        {
+            name: 'Firefox Browser',
+            use: {
+                browserName: 'firefox',
+                channel: 'firefox',
+                viewport: { width: 1400, height: 900 },
+            }
+        },
+    ],
 }
 
 module.exports = config;
