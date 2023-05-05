@@ -80,6 +80,10 @@ td {
     cursor: pointer;
 }
 
+#container-button:hover {
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4)
+}
+
 #price {
     text-decoration: underline;
     font-size: large;
@@ -121,6 +125,7 @@ td {
     cursor: pointer;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
+    transition: background-color 1s, color 1s;
 }
 
 .footer-class:hover {

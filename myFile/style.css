@@ -57,7 +57,6 @@ footer p {
 
 .main-header h1 {
     font-style: italic;
-    margin-bottom: 20px;
 }
 
 .main-header {
@@ -110,14 +109,13 @@ footer p {
     padding: 20px 40px;
     margin-bottom: 20px;
     height: 200px;
-
 }
 
 .related-posts {
-    background-color: #788383;
-    border-top: 5px solid #2d05bd;
-    border-bottom: 5px solid #2d05bd;
-    /* display: flex; */
+
+    border: 5px solid #7cfa0d;
+
+    background-color: #c2c7c9;    /* display: flex; */
 }
 
 h2 {
@@ -218,8 +216,11 @@ aside {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
+    position: relative;
 }
 
+/* 
 .like-button {
     background-color: orange;
     color: purple;
@@ -233,7 +234,7 @@ aside {
 
     /* top:50px;
     left:50px; */
-}
+
 
 .scroller {
     background-color: greenyellow;
@@ -252,15 +253,19 @@ h3+p::first-line {
     font-weight: bold;
 }
 
-h2::after {
+h1::after {
     content: "TOP";
     background-color: #ffff00;
     position: absolute;
-    top: 0;
-    right: 73px;
+    top: -20px;
+    left: -20px;
     padding: 16px;
     color: #5732dd;
     font-weight: bold;
+    font-size: 20px;
+    margin-right: -5px;
+    border: 3px solid black;
+    padding: 10px;
 }
 
 /* floats */
@@ -306,3 +311,60 @@ h2::after {
     margin-bottom: 0;
     margin-left: 15px;
 }
+
+.related-link {
+    text-decoration: 0;
+}
+
+
+/* .row {
+    display: flex;
+} */
+/* 
+.list {
+    display: inline-block;
+    vertical-align: top; */
+/* } */
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    column-gap: 75px;
+    row-gap: 60px;
+    align-items: start;
+}
+
+.main-header {
+    grid-column: 1 / -1;
+    border: 5px solid #7cfa0d;
+
+}
+
+article {}
+
+aside {}
+
+footer {
+    grid-column: -3 / -1;
+    background-color: #c2c7c9;
+    border: 5px solid #7cfa0d;
+
+}
+
+
+.related-post-text {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: larger;
+}
+
+.like-button {
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+

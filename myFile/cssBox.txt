@@ -27,7 +27,7 @@ we need to give this smaller components a layout
 
 
 //------------flexbox-----------------------------
-set of related css properties that we can sue to build one dimention layouts
+set of related css properties that we can use to build one dimention layouts
 we start by using the property "display:flex" on a container element which will be the flex container => then all of the child elements of that container will become the flex items
 
 flex container properties => important ones
@@ -46,3 +46,16 @@ flex-shrink: 1 allow an element to shrink
 flex-basis: auto => to define an item's width instead of the width property
 flex: 0 1 auto => recommended shorthand for flex-grow , shrink and basis
 
+//-------------CSS Grid-------------------------- 
+a grid is a layout that has rows and columns
+the first step is set the display property => display: grid
+and another property grid-template-columns: 100px 100px; these two values define how wide our grid columns are
+meaning first column will have a width of 100px and the second column  will have a 100px width as well
+in order to create space between the columns and rows => we should use this property on the parent container
+column-gap: 20px => for columns
+row-gap:10px => for rows
+
+//-----------------Web DEsign-------------------
+
+HeroIcons for svg icons 
+open colors for choosing colors

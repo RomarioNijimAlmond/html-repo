@@ -1,0 +1,52 @@
+.div1 {
+    background-color: black;
+    color: white;
+}
+
+.div2 {
+    background-color: yellow;
+}
+
+.div3 {
+    background-color: blue;
+    color: white;
+
+}
+
+.div4 {
+    background-color: rgb(116, 46, 228);
+    color: white;
+}
+
+.div5 {
+    background-color: green;
+    color: white;
+}
+
+.div6 {
+    background-color: grey;
+}
+
+.grid-div {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.grid-div2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    height: 300px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.div7 {
+    background-color: bisque;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
