@@ -115,7 +115,8 @@ footer p {
 
     border: 5px solid #7cfa0d;
 
-    background-color: #c2c7c9;    /* display: flex; */
+    background-color: #c2c7c9;
+    /* display: flex; */
 }
 
 h2 {
@@ -367,4 +368,31 @@ footer {
     top: 5px;
 }
 
+/* .related-second-list a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} */
 
+
+.related-posts a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+.related-posts {
+    padding-top: 5px;
+
+}
+
+.related-post-text {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}

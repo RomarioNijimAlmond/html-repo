@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>
+        Table.com
+    </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 700px;
+            height: 200px;
+            margin: 200px auto;
+            border-collapse: collapse;
+            background-color: rgb(236, 239, 241);
+
+        }
+
+        td {
+            padding: 16px 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        .table-headers th {
+            background-color: rgb(16, 128, 103);
+            width: 200px;
+            height: 50px;
+            color: white;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 27px;
+        }
+
+        .table-row {
+            text-align: center;
+        }
+
+        .table-row th {
+            font-size: 20px;
+            color: black;
+        }
+
+        /* .table-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(50px, auto);
+            grid-gap: 10px;
+        } */
+
+
+        tbody tr:nth-child(2),
+        tbody tr:nth-child(4) {
+            background-color: rgb(219, 219, 219);
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="table-container">
+        <table class="my-table">
+            <thead class="table-headers">
+                <tr class="headers">
+                    <th>head 1</th>
+                    <th>head 2</th>
+                    <th>head 3</th>
+                    <th>head 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-row">
+                    <th>cell 1</th>
+                    <td>cell 2</td>
+                    <td>cell 3</td>
+                    <td>cell 4</td>
+                </tr>
+                <tr class="table-row">
+                    <th>cell 6</th>
+                    <td>cell 7</td>
+                    <td>cell 8</td>
+                    <td>cell 9</td>
+                </tr>
+                <tr class="table-row">
+                    <th>cell 10</th>
+                    <td>cell 11</td>
+                    <td>cell 12</td>
+                    <td>cell 13</td>
+                </tr>
+                <tr class="table-row">
+                    <th>cell 14</th>
+                    <td>cell 15</td>
+                    <td>cell 16</td>
+                    <td>cell 17</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
