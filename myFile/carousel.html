@@ -3,32 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <link href="carousel.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
     <title>
         Crousel Component
     </title>
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: "Inter", sans-serif;
-            color: #343a40;
-        }
-
-        .carousel {
-            background-color: green;
-        }
-
-        img {
-            height: 200px;
-        }
-
-    </style>
 </head>
 
 <body>
@@ -43,22 +22,28 @@
             <p class="testimonial-author">Maria De Almeda</p>
             <p class="testimonial-job">Senior VP of Engineering</p>
         </blockquote>
-        <button class="btn">
+        <button class="btn btn-left">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="btn-icon">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
 
         </button>
-        <button class="btn">
+        <button class="btn btn-right">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="btn-icon">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
             </svg>
 
         </button>
-    </div>
 
+        <div class="dots">
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+        </div>
+    </div>
 </body>
 
 </html>
