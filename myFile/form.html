@@ -100,14 +100,16 @@
             <form class="web-form">
                 <div class="form-header">Form</div>
                 <label for="firstname">First Name:</label>
-                <input type="text" id="firstname-field" placeholder="first name">
+                <input type="text" id="firstname-field" placeholder="first name" required>
                 <label for="lastname">Last Name:</label>
-                <input type="text" id="firstname-field" placeholder="first name">
+                <input type="text" id="lastname-field" placeholder="first name" required>
                 <label for="phone" id="phone" placeholder="phone">Phone:</label>
                 <input type="text" id="phone-field" placeholder="phone" />
                 <label for="email">Email:</label>
-                <input type="text" id="email" placeholder="email" />
-                <button>Submit</button>
+                <input type="text" id="email" placeholder="email" required />
+                <button id="submit">Submit</button>
+
+                <span role="alert" id="nameError" aria-hidden="true"></span>
 
             </form>
 
@@ -150,5 +152,7 @@
         </div>
     </section>
 </body>
+
+<script src="form.js"></script>
 
 </html>

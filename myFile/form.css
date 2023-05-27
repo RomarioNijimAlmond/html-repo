@@ -1,4 +1,6 @@
-.menu-icon {}
+body {
+    width: 100%;
+}
 
 .logo-icon {
     width: 50px;
@@ -64,7 +66,7 @@
 
 .sidebar svg {
     width: 50px;
-   
+
 }
 
 .web-table {
@@ -114,12 +116,22 @@ section {
     margin-bottom: 10px;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
 
 /* --------------------------------------------------- */
 
+#nameError {
+    display: none;
+}
 
+#nameError.visible {
+    display: block;
+}
 
+input.invalid {
+    border-color: red;
+}

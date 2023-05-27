@@ -11,6 +11,7 @@ html {
 .container {
     margin: 0 auto;
     width: 1200px;
+    position: relative;
 }
 
 header {
@@ -23,13 +24,31 @@ header {
 
 }
 
+.logo {
+    position: relative;
+    display: block;
+}
+
+.dropdown-container {
+    width: 500px;
+    background-color: grey;
+    display: none;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.logo:hover .dropdown-container {
+    display: block;
+}
+
 nav {
     font-size: 20px;
     font-weight: 700;
     display: flex;
     justify-content: space-between;
     color: white;
-    padding: 32px;
+    padding: 40px;
 }
 
 
